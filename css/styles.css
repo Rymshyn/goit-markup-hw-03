@@ -21,8 +21,18 @@ body {
 
 }
 
-ul {
+.list {
+    padding: 0;
+    margin: 0;
     list-style: none;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 3px solid tomato;
 }
 
 .visually-hidden {
@@ -38,6 +48,14 @@ ul {
     margin: -1px;
 }
 
+/*Header*/
+.page-header {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
 
 /*Логотип*/
 .logo {
@@ -53,6 +71,7 @@ ul {
 }
 .logo-footer {
     color: var(--primary-bg-color);
+    
 }
 
 
@@ -92,32 +111,58 @@ ul {
 /*Hero*/
 
 .hero {
-background-color: var(--secondary-bg-color);
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     color: var(--primary-bg-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
 }
 
 /*  Унікальний контент головної сторінки*/
 
 .title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 }
 
+.section {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
 .benefits-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
 }
 .benefits-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--section-text-color);
     font-size: 14px;
     line-height: 1.71;
@@ -128,16 +173,22 @@ background-color: var(--secondary-bg-color);
 }
 
 .team-list {
-background-color: var(--primary-bg-color);
+    background-color: var(--primary-bg-color);
 }
 
 .team-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 
 .team-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--section-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -159,8 +210,22 @@ background-color: var(--primary-bg-color);
 
 /*Підвал */
 .footer {
-    background-color: var(--secondary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+   background-color: var(--secondary-bg-color);
 }
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+.footer .item{
+    margin-bottom: 9px;
+}
+
 .contacts-nav .link-location {
     color: var(--primary-bg-color);
     font-style: normal;
@@ -168,6 +233,7 @@ background-color: var(--primary-bg-color);
     line-height: 1.71;
     text-decoration: none;
 }
+
 
 .contacts-nav .link-location:focus,
 .contacts-nav .link-location:hover {

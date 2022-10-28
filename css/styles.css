@@ -10,6 +10,7 @@
     --primary-black-color: #000000;
     --hero-button-color: #188CE8;
     --header-line-color: #ECECEC;
+    --project-border-color:#EEEEEE;
 }
 
 
@@ -58,11 +59,8 @@ img {
 /*Header*/
 .page-header {
     
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 32px;
-    padding-top: 32px;
     border-bottom: 1px solid var(--header-line-color);
     
     
@@ -151,7 +149,6 @@ img {
 
 .hero {
 
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 200px;
@@ -162,8 +159,12 @@ img {
 
 }
 .hero-title {
+   
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 
     color: var(--primary-bg-color);
     font-weight: 900;
@@ -171,6 +172,8 @@ img {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
+    
     
 }
 
@@ -187,13 +190,16 @@ img {
 }
 
 .section {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
 
 }
+.section.benefits {
+    padding-bottom: 0;
+}
+
 .benefits{
     display: flex;
     flex-wrap: wrap;
@@ -246,11 +252,13 @@ img {
     background-color: var(--primary-button-color);
     
 }
+.team.list{
+    gap: 30px;
+}
 
 .team-item {
     background-color: var(--primary-bg-color);
-    margin-right: auto;
-    margin-left: auto;
+   
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -315,10 +323,15 @@ img {
     margin-bottom: 0;
 }
 
+.project-caption {
+    padding: 20px 24px;
+    border: 1px solid var(--project-border-color);
+    }
+
 .project-title {
-    margin-top: 20;
-    margin-bottom: 4px;
-    padding-left: 24px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    
 
     font-weight: 700;
     font-size: 18px;
@@ -328,7 +341,7 @@ img {
 .project-text {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 24px;
+    
 
     color: var(--section-text-color);
     font-size: 16px;
@@ -338,7 +351,6 @@ img {
 
 /*Footer */
 .footer {
-    width: 1600px;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
@@ -354,12 +366,17 @@ img {
 .footer .item{
     margin-bottom: 9px;
 }
+.footer .contacts-nav .link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+}
 
 .contacts-nav .link-location {
     color: var(--primary-bg-color);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
     text-decoration: none;
 }
 
@@ -397,7 +414,7 @@ img {
 .portfolio-button {
     border-style: inherit;
     border-radius: 4px;
-    padding: 6px, 22px;
+    padding: 6px 22px;
 
     color: var(--primary-text-color);
     background-color: var(--primary-button-color);
